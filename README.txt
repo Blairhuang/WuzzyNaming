@@ -5,12 +5,14 @@
 
 #----------User Input Interface----------------------------------
 print('do you want to build your custom corpus or use Build_in corpus?')
-build='yes' or 'no'
+build=input('')
 
 print('if yes, input your file directory(make sheet1 as the roomname')
-directory = r'C:\Users\DELL\Desktop\RoomName' #(directory of the FolderPath of RoomName excel documents)
+directory = input('')
+#directory = r'C:\Users\DELL\Desktop\RoomName' #(directory of the FolderPath of RoomName excel documents)
 
 print('input the directory of your important nouns:')
+imp_directory = input('')
 #imp_directory = r'C:\Users\DELL\Desktop\wuzzynaming\important_nouns\Important_Noun.xlsx'(directory of the FilePath of important_noun excel file)
 
 print('do you need translate? yes or no')
@@ -24,7 +26,6 @@ Description=input('')
 #input_description='inside'
 print('input ROOM ownership: ')
 Ownership=input('')
-#Ownership = 'coach'
 print('input ROOM sector: ')
 input_sector = input('')
 #input_sector = 'stadium'
