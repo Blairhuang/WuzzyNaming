@@ -19,13 +19,13 @@ print('do you need translate? yes or no')
 translate = input('')
 #translate='no' or 'yes'
 print('input ROOM function: ')
-Function=input('')
+input_function=input('')
 #input_function='wc'
 print('input ROOM description: ')
-Description=input('')
+input_description=input('')
 #input_description='inside'
 print('input ROOM ownership: ')
-Ownership=input('')
+input_ownership=input('')
 print('input ROOM sector: ')
 input_sector = input('')
 #input_sector = 'stadium'
@@ -38,7 +38,7 @@ combined_dict = standard_Dict(build.lower(),imp_directory,directory,0.88) #(you 
 
 Export = Custom_or_Build(build.lower(),directory,r'C:/Users/DELL/Desktop/wuzzynaming/RoomCorpus/Corpus_Combo.txt',r'C:/Users/DELL/Desktop/wuzzynaming/RoomCorpus/All_corpus.txt')
 #(for corpus, replace the FilePath with your own path)
-eg. Export = Custom_or_Build(build.lower(),directory,r'.../Corpus_Combo.txt',r'.../All_corpus.txt')
+#eg. Export = Custom_or_Build(build.lower(),directory,r'.../Corpus_Combo.txt',r'.../All_corpus.txt')
 
 All_corpus = Export[1]
 noun_lst = Export[2]
@@ -50,7 +50,7 @@ SECTOR = 'Stadium'
 
 
 #----------Standard Result----------------------------------
-print(standard(FUNCTION,DESCRIPTION,SECTOR,Ownership,combined_dict)) #present function,description,sector,ownership, property 
+print(standard(FUNCTION,DESCRIPTION,SECTOR,input_ownership,combined_dict)) #present function,description,sector,ownership, property 
 
 #----------Function_Synonym Result----------------------------------
 Function_synonym= Synonym_Function(FUNCTION,noun_lst,tolerance) 
