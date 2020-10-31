@@ -1,2 +1,0 @@
-# WuzzyNaming
-Python library 
